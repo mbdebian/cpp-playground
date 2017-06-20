@@ -18,4 +18,5 @@ int main(int argc, char* argv[]) {
     PRINT_DOUBLE_EXPR(a + b + c);
     PRINT_DOUBLE_EXPR(a + b - c);
     PRINT_INT_EXPR(int_a + int_b / int_c);
+    PRINT_INT_EXPR((int_a + int_b) / int_c);
 }
