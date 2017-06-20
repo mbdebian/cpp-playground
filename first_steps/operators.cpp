@@ -4,6 +4,7 @@
 #define STR(x) #x
 #define PRINT_INT_EXPR(expr) (fprintf(stdout, "%s -> %d\n", STR(expr), (expr)))
 #define PRINT_DOUBLE_EXPR(expr) (fprintf(stdout, "%s -> %f\n", STR(expr), (expr)))
+#define PRINT_BOOLEAN_EXPR(expr) (fprintf(stdout, "%s -> %s\n", STR(expr), (expr ? "true" : "false")))
 
 int main(int argc, char* argv[]) {
     double a = 3.25;
@@ -22,4 +23,11 @@ int main(int argc, char* argv[]) {
     PRINT_INT_EXPR(int_a + int_b / int_c);
     PRINT_INT_EXPR((int_a + int_b) / int_c);
     PRINT_INT_EXPR(int_a * int_b / int_c);
+    std::cout << "---> Boolean Expressions" << std::endl;
+    PRINT_BOOLEAN_EXPR(int_a == int_b);
+    PRINT_BOOLEAN_EXPR(int_a != int_b);
+    PRINT_BOOLEAN_EXPR(int_a < int_b);
+    PRINT_BOOLEAN_EXPR(int_a > int_b);
+    PRINT_BOOLEAN_EXPR(int_a <= int_b);
+    PRINT_BOOLEAN_EXPR(int_a >= int_b);
 }
