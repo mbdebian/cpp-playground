@@ -15,8 +15,11 @@ int main(int argc, char* argv[]) {
 
     // The following will not compile because the expression returning type is double
     // PRINT_INT_EXPR(a + b + c);
+    fprintf(stdout, "---> (a, b, c) = (%f, %f, %f)\n", a, b, c);
     PRINT_DOUBLE_EXPR(a + b + c);
     PRINT_DOUBLE_EXPR(a + b - c);
+    fprintf(stdout, "---> (int_a, int_b, int_c) = (%d, %d, %d)\n", int_a, int_b, int_c);
     PRINT_INT_EXPR(int_a + int_b / int_c);
     PRINT_INT_EXPR((int_a + int_b) / int_c);
+    PRINT_INT_EXPR(int_a * int_b / int_c);
 }
