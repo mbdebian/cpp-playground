@@ -30,6 +30,8 @@ int main(int argc, char* argv[]) {
         print_result(lhs - rhs);
     } else if (operation == "x") {
         print_result(lhs * rhs);
+    } else if (operation == "/") {
+        print_result(lhs / rhs);
     } else {
         std::cerr << "Error: Operation '" << operation << "' NOT SUPPORTED" << std::endl;
     }
