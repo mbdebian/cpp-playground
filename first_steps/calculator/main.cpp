@@ -12,7 +12,7 @@ void print_usage(char* prog_name) {
 }
 
 void print_result(double result) {
-    std::cout << "[RESULT]> " << result << std::endl;
+    std::cout << "[ RESULT ]> " << result << std::endl;
 }
 
 int main(int argc, char* argv[]) {
