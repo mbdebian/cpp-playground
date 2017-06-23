@@ -5,6 +5,7 @@
 */
 #include <iostream>
 #include <string>
+#include <cmath>
 
 void print_usage(char* prog_name) {
     std::cout << prog_name << " <num 1> operation <num 2>" << std::endl;
