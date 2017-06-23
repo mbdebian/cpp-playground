@@ -26,6 +26,8 @@ int main(int argc, char* argv[]) {
 
     if (operation == "+") {
         print_result(lhs + rhs);
+    } else if (operation == "-") {
+        print_result(lhs - rhs);
     } else {
         std::cerr << "Error: Operation '" << operation << "' NOT SUPPORTED" << std::endl;
     }
