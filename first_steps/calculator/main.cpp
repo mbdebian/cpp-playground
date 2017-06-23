@@ -23,4 +23,10 @@ int main(int argc, char* argv[]) {
     double lhs = std::stod(argv[1]);
     std::string operation = argv[2];
     double rhs = std::stod(argv[3]);
+
+    if (operation == "+") {
+        print_result(lhs + rhs);
+    } else {
+        std::cerr << "Error: Operation '" << operation << "' NOT SUPPORTED" << std::endl;
+    }
 }
