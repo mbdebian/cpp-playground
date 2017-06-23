@@ -12,6 +12,7 @@ void print_usage(char* prog_name) {
 int main(int argc, char* argv[]) {
     if (argc != 4) {
         std::cerr << "Error: invalid number of arguments, must be 4" << std::endl;
+        print_usage(argv[0]);
     }
-    
+
 }
