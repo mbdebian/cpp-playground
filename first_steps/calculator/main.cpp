@@ -10,6 +10,10 @@ void print_usage(char* prog_name) {
     std::cout << prog_name << " <num 1> operation <num 2>" << std::endl;
 }
 
+void print_result(double result) {
+    std::cout << "[RESULT]> " << result << std::endl;
+}
+
 int main(int argc, char* argv[]) {
     if (argc != 4) {
         std::cerr << "Error: invalid number of arguments, must be 4" << std::endl;
