@@ -4,7 +4,7 @@
 
 inline
 double celsius_to_fahrenheit(double celsius_temp) {
-    return (c * 9/5) + 32;
+    return (celsius_temp * 9/5) + 32;
 }
 
 #endif // TEMP_CONVERTER_HPP
