@@ -15,3 +15,7 @@ TEST(test_celsius_to_fahrenheit_for_15) {
 TEST(test_celsius_to_fahrenheit_for_19) {
     unittest::assertions::assert_true(celsius_to_fahrenheit(19) == 66.2, SPOT);
 }
+
+TEST(test_celsius_to_fahrenheit_for_21) {
+    unittest::assertions::assert_true(celsius_to_fahrenheit(21) == 69.8, SPOT);
+}
